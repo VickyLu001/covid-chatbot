@@ -1,0 +1,59 @@
+session_config:
+  session_expiration_time: 1
+  carry_over_slots_to_new_session: true
+intents:
+- tell_symptom
+- mood_unhappy
+- greet
+- goodbye
+- tell_drug
+- deny
+- bot_challenge
+- affirm
+- mood_great
+- ask_question
+- end_description
+- chitchat
+- ask_profile
+- tell_temperature
+entities:
+- CHEMICAL
+- DISEASE
+- TEMPERATURE
+slots:
+  drugs:
+    type: unfeaturized
+  old_drugs:
+    type: list
+  old_symptoms:
+    type: list
+  symptoms:
+    type: unfeaturized
+  temperature:
+    type: unfeaturized
+responses:
+  utter_ask_symptom:
+  - text: Could you please elaborate your symptoms?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  - text: Goodbye
+  utter_greet:
+  - text: Hey! How are you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions:
+- ask_symptom_develop
+- ask_temperature
+- load_profile
+- record_drug
+- record_symptom
+- utter_ask_symptom
+- utter_cheer_up
+- utter_goodbye
+- utter_greet
