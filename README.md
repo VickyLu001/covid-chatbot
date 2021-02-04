@@ -1,4 +1,4 @@
-# covid-chatbot
+# Covid Chatbot based on Rasa
 
 ## Pre-requisite
 1. Install Rasa
