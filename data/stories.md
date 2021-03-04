@@ -149,7 +149,7 @@
 * tell_symptom{"DISEASE":"fever"}
     - record_symptom
 * tell_temperature{"TEMPERATURE":"105"}
-    - record_symptom
+    - record_temperature
 
 ## New Story
 
@@ -163,7 +163,7 @@
     - record_symptom
     - ask_temperature
 * tell_temperature{"TEMPERATURE":"38"}
-    - record_symptom
+    - record_temperature
 
 ## New Story
 
@@ -177,4 +177,4 @@
     - record_symptom
     - ask_temperature
 * tell_temperature{"TEMPERATURE":"100"}
-    - record_symptom
+    - record_temperature

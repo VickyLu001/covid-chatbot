@@ -157,3 +157,15 @@ class ActionRecordDrug(Action):
 
         return []
 
+class ActionRecordTemperature(Action):
+
+    def name(self) -> Text:
+        return "record_temperature"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        dispatcher.utter_message(text="Temperature recorded.")
+
+        return []

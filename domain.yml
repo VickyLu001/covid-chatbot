@@ -53,6 +53,7 @@ actions:
 - load_profile
 - record_drug
 - record_symptom
+- record_temperature
 - utter_ask_symptom
 - utter_cheer_up
 - utter_goodbye
