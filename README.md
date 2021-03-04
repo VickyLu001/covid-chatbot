@@ -3,7 +3,7 @@
 ## Pre-requisite
 1. Install Rasa
 ```
-pip install rasa
+pip install rasa scispacy==0.3.0
 ```
 For more information regarding rasa, please visit [rasa docs](https://rasa.com/docs/)
 
