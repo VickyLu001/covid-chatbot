@@ -17,7 +17,7 @@ For more inforamtion regarding scispacy, please visit [scispacy](https://allenai
 To install our project
 ```
 git clone https://github.com/VickyLu001/covid-chatbot.git
-cd covid-chatbot
+cd covid-chatbot/rasa
 ```
 Now you can talk with our chatbot in terminal
 ```
@@ -27,3 +27,6 @@ To talk with our chatbot in other channels, refer to [Connecting to Messaging an
 
 ## How to generate patient profile
 To generate patient profile, you'll need to store all the conversation history. Our `processRasaDB.py` use the `rasa.db` created by RasaX here as an exmaple to illustrate it. To set up other database, please visit [tracker store](https://rasa.com/docs/rasa/tracker-stores/). You might need to modify the python script to work with other tracker store.
+
+## Knowledge Graph
+See readme in `knowledge-graph`
